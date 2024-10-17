@@ -1,7 +1,7 @@
 {
   "mappings": [
-    "/content/kratig-xwalk/:/",
-    "/content/kratig-xwalk/configuration:/.helix/config.json",
-    "/content/kratig-xwalk/metadata:/metadata.json"
+    "/content/kratig-xwalk-training/:/",
+    "/content/kratig-xwalk-training/configuration:/.helix/config.json",
+    "/content/kratig-xwalk-training/metadata:/metadata.json"
   ]
 }
