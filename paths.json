@@ -1,7 +1,7 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/kratig-xwalk/:/",
+    "/content/kratig-xwalk/configuration:/.helix/config.json",
+    "/content/kratig-xwalk/metadata:/metadata.json"
   ]
 }
