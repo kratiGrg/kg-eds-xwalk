@@ -187,19 +187,28 @@
   },
   {
     "id": "accordion",
-    "multi": true,
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Title"
-      },
-      {
-        "component": "richtext",
-        "name": "richText",
-        "value": "",
-        "label": "Rich Text",
-        "valueType": "string"
+        "component": "multifield",
+        "name": "items",
+        "label": "Accordion Items",
+        "field": {
+          "component": "fieldset",
+          "fields": [
+            {
+              "component": "text",
+              "name": "title",
+              "label": "Title"
+            },
+            {
+              "component": "richtext",
+              "name": "richText",
+              "label": "Rich Text",
+              "value": "",
+              "valueType": "string"
+            }
+          ]
+        }
       }
     ]
   }
