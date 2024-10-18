@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p48362-e1471787.adobeaemcloud.com//bin/franklin.delivery/kratiGrg/kg-eds-xwalk/main"
+    url: "https://author-p48362-e1471787.adobeaemcloud.com/bin/franklin.delivery/kratiGrg/kg-eds-xwalk/main"
     type: "markup"
     suffix: ".html"
