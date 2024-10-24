@@ -104,7 +104,7 @@
         "label": "Style",
         "options": [
           {
-            "name": "Highlights",
+            "name": "Highlight",
             "value": "highlight"
           }
         ]
@@ -127,6 +127,17 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "widerImage",
+            "value": "widerImage"
+          }
+        ]
       }
     ]
   },
