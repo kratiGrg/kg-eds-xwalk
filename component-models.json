@@ -106,6 +106,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "widerImage",
+            "value": "widerImage"
           }
         ]
       }
@@ -127,17 +131,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      },
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "widerImage",
-            "value": "widerImage"
-          }
-        ]
       }
     ]
   },
