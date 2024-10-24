@@ -106,6 +106,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "widerImage",
+            "value": "widerImage"
           }
         ]
       }
