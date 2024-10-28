@@ -188,5 +188,58 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "offer",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Heading",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "subheading",
+        "label": "Sub Heading",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "offerline",
+        "label": "Offer Line",
+        "multi": false
+      },
+      {
+        "component": "date-time",
+         "valueType": "date-time",
+        "name": "offertime",
+        "label": "Offer Time"        
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-tag",
+        "label": "Categories",
+        "name": "cq:tags",
+        "valueType": "string"
+      }
+      
+    ]
   }
 ]
