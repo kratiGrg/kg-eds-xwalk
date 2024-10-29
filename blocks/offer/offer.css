@@ -1,0 +1,81 @@
+.offer {
+  position: relative;
+  color: var(--background-color);
+  text-align: center;
+  padding: 2em;
+}
+
+.offer picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.offer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.offer-content {
+  position: relative;
+  z-index: 1;
+}
+
+.offer .offer-subtitle {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-m);
+  font-weight: 600;
+}
+
+.offer .offer-title {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.offer .offer-subtext,
+.offer .offer-description,
+.offer .offer-datetime,
+.offer .offer-validity {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  margin: 0.5em 0;
+}
+
+.offer .offer-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.offer .button {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  padding: 0.8em 1.5em;
+}
+
+.offer .button.secondary {
+  border: 2px solid var(--background-color);
+  color: var(--background-color);
+  background-color: transparent;
+}
+
+.offer .button.secondary:hover,
+.offer .button.secondary:focus {
+  background-color: var(--background-color);
+  color: #d0021b;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .offer {
+    text-align: left;
+  }
+}

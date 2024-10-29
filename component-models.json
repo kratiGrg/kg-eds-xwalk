@@ -217,6 +217,20 @@
         "label": "Categories",
         "name": "cq:tags",
         "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Themes",
+        "description": "Select background",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "NoImage",
+            "value": "no-image"
+          }
+        ]
       }
       
     ]
