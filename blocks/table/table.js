@@ -1,34 +1,33 @@
-/*
- * Table Block
- * Recreate a table
- * https://www.hlx.live/developer/block-collection/table
- */
+import { createOptimizedPicture } from '../../scripts/aem.js';
 
-function buildCell(rowIndex) {
-  const cell = rowIndex ? document.createElement('td') : document.createElement('th');
-  if (!rowIndex) cell.setAttribute('scope', 'col');
-  return cell;
-}
+export default function decorate(block) {
+  // Extract data from the original block HTML
+  const offerValidity = block.querySelector('.offer > div:nth-child(3) > div').textContent;
 
-export default async function decorate(block) {
-  const table = document.createElement('table');
-  const thead = document.createElement('thead');
-  const tbody = document.createElement('tbody');
+  // Extract the image source
+  const imageDiv = block.querySelector('.offer > div:nth-child(1) > div');
+  const imageSrc = imageDiv.querySelector('img').src;
 
-  const header = !block.classList.contains('no-header');
-  if (header) table.append(thead);
-  table.append(tbody);
+  // Create a picture element for the image
+  const picture = createOptimizedPicture(imageSrc);
 
-  [...block.children].forEach((child, i) => {
-    const row = document.createElement('tr');
-    if (header && i === 0) thead.append(row);
-    else tbody.append(row);
-    [...child.children].forEach((col) => {
-      const cell = buildCell(header ? i : i + 1);
-      cell.innerHTML = col.innerHTML;
-      row.append(cell);
-    });
-  });
-  block.innerHTML = '';
-  block.append(table);
+  // Replace the block's inner HTML with the new structure
+  block.innerHTML = `
+    ${picture.outerHTML}
+    <div class="offer-content">
+      <p class="offer-subtitle">Last few days of sale 30%-70% off</p>
+      <h2 class="offer-title">Buy 2 get 1 free</h2>
+      <p class="offer-subtext">on all sale items</p>
+      <p class="offer-description">Testing the placeholder for Banners and Fragments</p>
+      <p class="offer-datetime">10/03/2024 04:00:10 PM</p>
+      <div class="offer-buttons">
+        <a href="#" class="button secondary">Women</a>
+        <a href="#" class="button secondary">Men</a>
+        <a href="#" class="button secondary">Kids</a>
+        <a href="#" class="button secondary">Repurposed Gems</a>
+        <a href="#" class="button secondary">Dressing for the metaverse</a>
+      </div>
+      <p class="offer-validity">${offerValidity}</p>
+    </div>
+  `;
 }
