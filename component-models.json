@@ -253,12 +253,16 @@
         "valueType": "string",
         "options": [
           {
-            "name": "alternatecol-color",
-            "value": "alt-col-color"
+            "name": "No Header",
+            "value": "no-header"
           },
           {
-            "name": "alternaterow-color",
-            "value": "alt-row-color"
+            "name": "Striped",
+            "value": "striped"
+          },
+          {
+            "name": "Bordered",
+            "value": "bordered"
           }
         ]
       }
