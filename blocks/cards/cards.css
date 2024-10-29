@@ -25,39 +25,3 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
-
-/* New Variation for widerImage class */
-.widerImage .cards > ul > li {
-  position: relative;
-  color: white;
-}
-
-.widerImage .cards > ul > li .cards-card-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.widerImage .cards > ul > li .cards-card-body {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  right: 16px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 16px;
-  border-radius: 8px;
-  z-index: 1;
-}
-
-.widerImage .cards > ul > li img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
