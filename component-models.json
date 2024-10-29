@@ -236,7 +236,7 @@
     ]
   },
   {
-    "id": "offer",
+    "id": "table",
     "fields": [
       {
         "component": "richtext",
