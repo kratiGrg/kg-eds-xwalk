@@ -16,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "offer"
+      "offer",
+      "table"
     ]
   },
   {
@@ -47,6 +48,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "table",
+    "components": [
+      "text"
     ]
   }
 ]

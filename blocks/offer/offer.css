@@ -79,3 +79,14 @@
     text-align: left;
   }
 }
+
+/* New variation for no-image class */
+.no-image.offer {
+  background-color: var(--light-color);
+  color: var(--text-color);
+}
+
+.no-image.offer picture,
+.no-image.offer img {
+  display: none;
+}

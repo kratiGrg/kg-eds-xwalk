@@ -234,5 +234,36 @@
       }
       
     ]
+  },
+  {
+    "id": "offer",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Themes",
+        "description": "Select background",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "alternatecol-color",
+            "value": "alt-col-color"
+          },
+          {
+            "name": "alternaterow-color",
+            "value": "alt-row-color"
+          }
+        ]
+      }
+      
+    ]
   }
 ]
