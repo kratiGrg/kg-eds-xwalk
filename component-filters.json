@@ -47,7 +47,8 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "aem-tag"
     ]
   },
   {
