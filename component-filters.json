@@ -18,7 +18,8 @@
       "fragment",
       "offer",
       "table",
-      "blogs"
+      "blogs",
+      "articles"
     ]
   },
   {
@@ -31,6 +32,12 @@
     "id": "blogs",
     "components": [
       "blog"
+    ]
+  },
+  {
+    "id": "articles",
+    "components": [
+      "article"
     ]
   },
   {
