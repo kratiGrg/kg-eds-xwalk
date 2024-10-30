@@ -17,13 +17,20 @@
       "columns",
       "fragment",
       "offer",
-      "table"
+      "table",
+      "blogs"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "blogs",
+    "components": [
+      "blog"
     ]
   },
   {
