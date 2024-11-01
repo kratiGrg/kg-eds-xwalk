@@ -185,6 +185,17 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+        {
+          "name": "Vertical",
+          "value": "vertical"
+        }
+        ]
       }
     ]
   },
