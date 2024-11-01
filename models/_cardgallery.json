@@ -32,25 +32,22 @@
         }
   ],
   "models": [
-  {
-    "id": "cardgallery",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Themes",
-        "description": "Select background",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "vertical",
-            "value": "vertical"
-          }
-        ]
-      }
-    ]
-  }
+    {
+      "id": "cardgallery",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Vertical",
+              "value": "vertical"
+            }
+          ]
+        }
+      ]
+    }
   ],
   "filters": [
     {
