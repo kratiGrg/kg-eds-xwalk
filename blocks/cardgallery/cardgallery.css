@@ -1,0 +1,56 @@
+.cardgallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background-color: var(--background-color);
+}
+
+.cardgallery .cardgallery-card {
+  position: relative;
+  flex: 1 1 calc(100% / var(--card-item-count));
+  width: calc(100% / var(--card-item-count));
+  overflow: hidden; /* Ensure that the image doesn't overflow */
+  transition: transform 0.3s ease; /* Add transition for the card */
+}
+
+.cardgallery .cardgallery-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease; /* Keep transition for image filter */
+}
+
+.cardgallery .cardgallery-card:hover {
+  transform: scale(1.1); /* Enlarge the card item on hover */
+  z-index: 10; /* Ensure the card appears above other elements */
+}
+
+.cardgallery .cardgallery-card:hover img {
+  filter: grayscale(0%);
+}
+
+.cardgallery .cardgallery-card-title {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: var(--background-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-s);
+  font-weight: bold;
+  z-index: 5; /* Ensure the title remains above the image */
+}
+
+@media (max-width: 900px) {
+  .cardgallery {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cardgallery .cardgallery-card {
+    width: 100%;
+  }
+}
