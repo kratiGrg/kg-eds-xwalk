@@ -96,6 +96,25 @@
     ]
   },
   {
+    "id": "cardgallery",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Themes",
+        "description": "Select background",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "vertical",
+            "value": "vertical"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "section",
     "fields": [
       {
