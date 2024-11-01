@@ -273,26 +273,6 @@
     ]
   },
   {
-    "id": "calendar",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Blue",
-            "value": "blue"
-          },
-          {
-            "name": "Green",
-            "value": "green"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "table",
     "fields": [
       {

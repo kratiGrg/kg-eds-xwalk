@@ -19,8 +19,7 @@
       "offer",
       "table",
       "articles",
-      "calendar",
-      "cardGallery"
+      "cardgallery"
     ]
   },
   {
@@ -67,7 +66,7 @@
     ]
   },
   {
-    "id": "cardGallery",
+    "id": "cardgallery",
     "components": [
       "cardItem"
     ]
