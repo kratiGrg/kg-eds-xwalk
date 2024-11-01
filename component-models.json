@@ -154,7 +154,7 @@
     ]
   },
   {
-    "id": "cardItem",
+    "id": "carditem",
     "fields": [
       {
         "component": "reference",

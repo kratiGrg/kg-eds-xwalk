@@ -68,7 +68,7 @@
   {
     "id": "cardgallery",
     "components": [
-      "cardItem"
+      "carditem"
     ]
   }
   
