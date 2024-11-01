@@ -35,14 +35,17 @@
           "label": "Rows"
         },
         {
-          "component": "multiselect",
-          "name": "style",
-          "label": "Style",
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Themes",
+          "description": "Select background",
+          "valueType": "string",
           "options": [
-          {
-            "name": "Vertical",
-            "value": "vertical"
-          }
+            {
+              "name": "NoImage",
+              "value": "no-image"
+            }
           ]
         }
       ]
